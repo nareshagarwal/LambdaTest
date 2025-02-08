@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!-- Edge on Windows 10 -->
+    <test verbose="2" preserve-order="true" name="Test_Edge_Windows10">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="browserVersion" value="latest"/>
+        <classes>
+            <class name="BaseTest"/>
+            <class name="Test_Scenario_1"/>
+            <class name="Test_Scenario_2"/>
+            <class name="Test_Scenario_3"/>
+        </classes>
+    </test>
+
+    <!-- Safari on macOS (Updated platform from mac to macOS) -->
+    <test verbose="2" preserve-order="true" name="Test_Safari_macOS">
+        <parameter name="browser" value="Safari"/>
+        <parameter name="platform" value="macOS Ventura"/>  <!-- Updated platform -->
+        <parameter name="browserVersion" value="latest"/>
+        <classes>
+            <class name="BaseTest"/>
+            <class name="Test_Scenario_1"/>
+            <class name="Test_Scenario_2"/>
+            <class name="Test_Scenario_3"/>
+        </classes>
+    </test>
+</suite>
