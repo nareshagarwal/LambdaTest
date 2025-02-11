@@ -38,7 +38,7 @@ public class BaseTest {
             options.setCapability("browserVersion", browserVersion);
 
             try {
-                URL url = new URL("https://tusharamar1:1cyIbO4Azr3N3xagKC8uHXHhESBfTlcIW26kjoTrVH5ChdQ1lf@hub.lambdatest.com/wd/hub");
+                URL url = new URL("https://naresha1:tIav4WzJ4hiHVSnYVSjlvolUyj3dVL16SWU5mXUYBH0xJTekVg@hub.lambdatest.com/wd/hub");
                 driver = new RemoteWebDriver(url, options);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
